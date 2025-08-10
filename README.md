@@ -77,7 +77,7 @@ Este proyecto es un backend de autenticación RESTful. Utiliza Node.js y Express
 
 ---
 
-## 📍 Ejemplos de Endpoints de la API con Postman
+##  Ejemplos de Endpoints de la API con Postman
 
 A continuación se muestran ejemplos de cómo interactuar con los endpoints utilizando la herramienta **Postman**.
 
