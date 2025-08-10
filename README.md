@@ -172,7 +172,8 @@ Ruta protegida que devuelve la información del usuario autenticado. **Requiere*
 ---
 ## 📄 Licencia
 
- Desde su creación en 2025 en adelante    © jherraizsoler  Todos los derechos reservados.
+ Desde su creación en 2025 en adelante  
+ ©jherraizsoler tiene todos los derechos reservados.
 
 El contenido de este repositorio es propiedad del autor. Queda prohibido su uso, copia, modificación o distribución sin autorización expresa.
 
