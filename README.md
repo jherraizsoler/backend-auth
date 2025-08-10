@@ -75,7 +75,68 @@ Este proyecto es un backend de autenticación RESTful. Utiliza Node.js y Express
   * `POST /api/login` - Inicia sesión y devuelve un token JWT.
   * `GET /api/profile` - Ruta protegida. Requiere un token JWT en el encabezado `Authorization`.
 
------
+## 📍 Ejemplos de Endpoints de la API
+
+A continuación se muestran ejemplos de cómo interactuar con los endpoints utilizando `cURL`, una herramienta común para realizar peticiones HTTP directamente desde la terminal.
+
+### `POST /api/register`
+
+Registra un nuevo usuario con `username`, `email` y `password`.
+
+**Petición:**
+
+```bash
+curl --location --request POST 'http://localhost:3000/api/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "ejemplo-usuario",
+    "email": "usuario@example.com",
+    "password": "mi-contraseña-segura"
+}'
+```
+
+---
+
+### `POST /api/login`
+
+Autentica a un usuario y devuelve un **JSON Web Token (JWT)**. Este token es necesario para acceder a las rutas protegidas.
+
+**Petición:**
+
+```bash
+curl --location --request POST 'http://localhost:3000/api/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "usuario@example.com",
+    "password": "mi-contraseña-segura"
+}'
+```
+
+**Respuesta de ejemplo:**
+
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzM1M2U5ZmE0YzgxMjMzYzU0N2UzNyIsImlhdCI6MTYyODk3NDMzOH0.tu-token-jwt-super-largo"
+}
+```
+
+---
+
+### `GET /api/profile`
+
+Ruta protegida que devuelve la información del usuario autenticado. **Requiere** que el token JWT se envíe en el encabezado `Authorization` con el prefijo `Bearer`.
+
+**Petición:**
+
+```bash
+curl --location --request GET 'http://localhost:3000/api/profile' \
+--header 'Authorization: Bearer tu-token-jwt-super-largo'
+```
+
+**Nota:** Reemplaza `tu-token-jwt-super-largo` con el token real obtenido al iniciar sesión.
+
+---
+
 
 ## 📂 Estructura del Proyecto
 
