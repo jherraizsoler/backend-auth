@@ -1,7 +1,7 @@
 
 -----
 
-# Backend de Autenticación con Node.js y MongoDB
+# Backend de PersonaHubServidor funcion Autenticación con Node.js y MongoDB
 
 Este proyecto es un backend de autenticación RESTful. Utiliza Node.js y Express para el servidor, y MongoDB con Mongoose para la base de datos. La autenticación se gestiona con JSON Web Tokens (JWT).
 
