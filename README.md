@@ -169,13 +169,11 @@ Ruta protegida que devuelve la información del usuario autenticado. **Requiere*
 |-- package.json
 |-- README.md
 ```
-
------
-
+---
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT.
+© 2024 Tu Nombre o Empresa. Todos los derechos reservados.
 
------
+El contenido de este repositorio es propiedad del autor. Queda prohibido su uso, copia, modificación o distribución sin autorización expresa.
 
-Puedes copiar todo el texto de arriba sin problemas. Simplemente resáltalo y pégalo en tu `README.md`.
+---
